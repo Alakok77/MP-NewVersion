@@ -8,7 +8,7 @@ export default function Navbar(){
     
     return (
         <>
-            <nav className="flex justify-between pl-10 pr-10 pt-5 pb-5 items-center shadow-sm">
+            <nav className="flex justify-between pl-10 pr-10 pt-5 pb-5 items-center shadow-sm bg-white/80 backdrop-blur-md fixed w-full top-0">
                 <div className="flex gap-3 items-center">
                     <div className="bg-linear-to-r from-blue-500 to-purple-600 w-10 h-10 flex justify-center items-center rounded-lg">
                         <p className="text-white text-3xl font-bold">P</p>
