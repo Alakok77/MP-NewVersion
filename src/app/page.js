@@ -7,8 +7,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <>
-      <div className="absolute inset-0 bg-linear-to-b from-blue-50 via-purple-50/30 to-white -z-10"></div>
 
+      {/* My Profile */}
       <div className="flex items-center justify-center gap-10 mt-10 pt-20 pb-10">
 
         <div className='w-130'>
@@ -39,6 +39,16 @@ export default function Home() {
           <Image src="/profile.png" width={400} height={400} alt='me' className='rounded-full'></Image>
         </div>
 
+      </div>
+
+      {/* My Project */}
+      
+
+      {/* Work Together */}
+      <div className='flex flex-col items-center justify-center pt-20 pb-20'>
+        <h1 className='font-bold text-5xl mb-5'>Let's Work Together</h1>
+        <p className='text-gray-500 mb-10'>Have a project in mind? Let's create something amazing together.</p>
+        <Link href="/contact" className='bg-linear-to-r from-blue-500 to-purple-600 text-white w-50 h-15 rounded-lg flex items-center justify-center text-lg font-semibold hover:-translate-y-0.5 hover:shadow-xl transition duration-300'>Get In Touch</Link>
       </div>
     </>
   );
