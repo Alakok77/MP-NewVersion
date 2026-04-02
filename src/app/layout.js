@@ -10,9 +10,9 @@ export default function Layout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar></Navbar>
-        {children}
-        <Footer></Footer>
+          <Navbar></Navbar>
+          {children}
+          <Footer></Footer>
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export default function Login(){
 
         if (res.ok) {
             console.log("login success");
-            router.push("/dashboard");
+            window.location.href = "/dashboard";
             router.refresh();
         } else {
             console.log(data.error);
