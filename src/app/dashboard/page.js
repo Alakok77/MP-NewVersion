@@ -209,7 +209,7 @@ export default function About(){
                                 <input type="text" name="role" placeholder="Full Stack Developer" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-10 outline-none pl-3 mt-1"
                                         value={selectedProject?.role || ""}
                                         onChange={(e) =>
-                                            setSelectedProject({ ...selectedProject, title: e.target.value })
+                                            setSelectedProject({ ...selectedProject, role: e.target.value })
                                         }></input>
                             </div>
                             <div className="mt-2">
@@ -217,7 +217,7 @@ export default function About(){
                                 <input type="text" name="thumbnail" placeholder="https://example.com/image.jpg" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-10 outline-none pl-3 mt-1"
                                         value={selectedProject?.thumbnail || ""}
                                         onChange={(e) =>
-                                            setSelectedProject({ ...selectedProject, title: e.target.value })
+                                            setSelectedProject({ ...selectedProject, thumbnail: e.target.value })
                                         }></input>
                             </div>
                             <div className="mt-2">
@@ -225,7 +225,7 @@ export default function About(){
                                 <input type="text" name="short_desc" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-10 outline-none pl-3 mt-1"
                                         value={selectedProject?.short_desc || ""}
                                         onChange={(e) =>
-                                            setSelectedProject({ ...selectedProject, title: e.target.value })
+                                            setSelectedProject({ ...selectedProject, short: e.target.value })
                                         }></input>
                             </div>
                             <div className="mt-2">
@@ -233,7 +233,7 @@ export default function About(){
                                 <textarea type="text" name="full_desc" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-30 outline-none pl-3 pt-2 mt-1 resize-none"
                                             value={selectedProject?.full_desc || ""}
                                             onChange={(e) =>
-                                                setSelectedProject({ ...selectedProject, title: e.target.value })
+                                                setSelectedProject({ ...selectedProject, full_desc: e.target.value })
                                             }></textarea>
                             </div>
                             <div className="mt-2">
@@ -242,8 +242,8 @@ export default function About(){
                                         value={selectedProject?.tags?.join(", ") || ""}
                                         onChange={(e) =>
                                             setSelectedProject({
-                                            ...selectedProject,
-                                            tags: e.target.value.split(",").map(t => t.trim())
+                                                ...selectedProject,
+                                                tags: e.target.value.split(",").map(t => t.trim())
                                             })
                                         }></input>
                             </div>
@@ -253,8 +253,8 @@ export default function About(){
                                         value={selectedProject?.stack?.join(", ") || ""}
                                         onChange={(e) =>
                                             setSelectedProject({
-                                            ...selectedProject,
-                                            tags: e.target.value.split(",").map(t => t.trim())
+                                                ...selectedProject,
+                                                stack: e.target.value.split(",").map(t => t.trim())
                                             })
                                         }></input>
                             </div>
@@ -265,7 +265,7 @@ export default function About(){
                                             onChange={(e) =>
                                                 setSelectedProject({
                                                 ...selectedProject,
-                                                tags: e.target.value.split(",").map(t => t.trim())
+                                                features: e.target.value.split(",").map(t => t.trim())
                                                 })
                                             }></textarea>
                             </div>
@@ -276,7 +276,7 @@ export default function About(){
                                             onChange={(e) =>
                                                 setSelectedProject({
                                                 ...selectedProject,
-                                                tags: e.target.value.split(",").map(t => t.trim())
+                                                images: e.target.value.split(",").map(t => t.trim())
                                                 })
                                             }></textarea>
                             </div>
@@ -285,7 +285,7 @@ export default function About(){
                                 <textarea type="text" name="doc" placeholder="https://example.com/doc1.pdf, https://example.com/doc2.pdf" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-30 outline-none pl-3 pt-2 mt-1 resize-none"
                                             value={selectedProject?.documents || ""}
                                             onChange={(e) =>
-                                                setSelectedProject({ ...selectedProject, title: e.target.value })
+                                                setSelectedProject({ ...selectedProject, documents: e.target.value })
                                             }></textarea>
                             </div>
                             <div className="flex w-full gap-5 mt-2">
@@ -294,7 +294,7 @@ export default function About(){
                                     <input type="text" name="github" placeholder="https://github.com/..." className="border border-gray-300 bg-gray-100 w-full rounded-lg h-10 outline-none pl-3 mt-1"
                                             value={selectedProject?.github || ""}
                                             onChange={(e) =>
-                                                setSelectedProject({ ...selectedProject, title: e.target.value })
+                                                setSelectedProject({ ...selectedProject, github: e.target.value })
                                             }></input>
                                 </div>
                                 <div className="w-[50%]">
@@ -302,7 +302,7 @@ export default function About(){
                                     <input type="text" name="video" placeholder="https://demo.example.com" className="border border-gray-300 bg-gray-100 w-full rounded-lg h-10 outline-none pl-3 mt-1"
                                             value={selectedProject?.video || ""}
                                             onChange={(e) =>
-                                                setSelectedProject({ ...selectedProject, title: e.target.value })
+                                                setSelectedProject({ ...selectedProject, video: e.target.value })
                                             }></input>
                                 </div>
                             </div>
