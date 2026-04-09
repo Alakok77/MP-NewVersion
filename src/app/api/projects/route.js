@@ -41,13 +41,20 @@ export async function POST(req) {
   }
 }
 
-export async function GET() {
+export async function GET(req) {
   try {
+    const { searchParams } = new URL(req.url);
+    const category = searchParams.get("category");
+
     const db = await connectDB();
+
+    const query = category && category !== "all"
+      ? { category }
+      : {};
 
     const projects = await db
       .collection("projects")
-      .find({})
+      .find(query)
       .sort({ createdAt: -1 })
       .toArray();
 
