@@ -34,18 +34,26 @@ export default async function Home() {
           <p className="text-gray-600 text-2xl mt-15">Network Enthusiast & Full Stack Developer</p>
           <p className="text-gray-500 mt-4">Combining networking knowledge with web development to create efficient, reliable, and well-structured applications.</p>
           <div className="mt-4 flex gap-3">
-            <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-500 hover:text-blue-600"/>
-            </div>
-            <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faEnvelope} className="text-2xl text-gray-500 hover:text-blue-600"/>
-            </div>
-            <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faLinkedinIn} className="text-2xl text-gray-500 hover:text-blue-600"/>
-            </div>
-            <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                <FontAwesomeIcon icon={faFacebookF} className="text-2xl text-gray-500 hover:text-blue-600"/>
-            </div>
+            <Link href="https://github.com/Alakok77">
+              <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                  <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-500 hover:text-blue-600"/>
+              </div>
+            </Link>
+            <Link href="mailto:top.p1234558@gmail.com">
+              <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                  <FontAwesomeIcon icon={faEnvelope} className="text-2xl text-gray-500 hover:text-blue-600"/>
+              </div>
+            </Link>
+            <Link href="">
+              <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                  <FontAwesomeIcon icon={faLinkedinIn} className="text-2xl text-gray-500 hover:text-blue-600"/>
+              </div>
+            </Link>
+            <Link href="https://web.facebook.com/phiphop.thong.aun/?locale=th_TH">
+              <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                  <FontAwesomeIcon icon={faFacebookF} className="text-2xl text-gray-500 hover:text-blue-600"/>
+              </div>
+            </Link>
           </div>
           <div className='flex gap-3 mt-10'>
             <Link href='/projects' className='bg-linear-to-r from-blue-500 to-purple-600 w-50 h-10 rounded-lg flex items-center justify-center text-white font-extralight text-lg hover:-translate-y-0.5 hover:shadow-xl transition duration-300'>View Projects</Link>

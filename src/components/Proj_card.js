@@ -24,12 +24,22 @@ export default function Proj_card({ projects }){
                   </div>
                   <div className='flex ml-5 gap-2 items-center mt-3'>
                     <Link href={`/projects/${p._id}`} className='bg-linear-to-r from-blue-500 to-purple-600 rounded-lg text-white w-45 flex items-center justify-center h-10 hover:-translate-y-0.5 hover:shadow-xl transition duration-300'>View Details</Link>
-                    <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-500 hover:text-blue-600"/>
-                    </div>
-                    <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
-                        <FontAwesomeIcon icon={faEnvelope} className="text-2xl text-gray-500 hover:text-blue-600"/>
-                    </div>
+                    {
+                      p.github &&
+                      <Link href={p.github}>
+                        <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                            <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-500 hover:text-blue-600"/>
+                        </div>
+                      </Link>
+                    }
+                    {
+                      p.video &&
+                      <Link href={p.video}>
+                        <div className="w-10 h-10 rounded-lg bg-gray-200 hover:bg-gray-300 flex items-center justify-center">
+                            <FontAwesomeIcon icon={faEnvelope} className="text-2xl text-gray-500 hover:text-blue-600"/>
+                        </div>
+                      </Link>
+                    }
                   </div>
               </div>
             ))
