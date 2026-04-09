@@ -28,7 +28,7 @@ export default function Navbar(){
     return (
         <>
             <div className="absolute inset-0 bg-linear-to-b from-blue-50 via-purple-50/30 to-white -z-10"></div>
-            <nav className="flex justify-between pl-10 pr-10 pt-5 pb-5 items-center shadow-sm bg-white/80 backdrop-blur-md fixed w-full top-0">
+            <nav className="flex justify-between pl-10 pr-10 pt-5 pb-5 items-center shadow-sm bg-white/80 backdrop-blur-md fixed w-full top-0 z-50">
 
                 <Link href="/">
                     <div className="flex gap-3 items-center">
