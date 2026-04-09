@@ -16,7 +16,7 @@ export default function Proj_card({ projects }){
                   <div className='flex ml-5 mt-8 gap-2 items-center'>
                     {
                       p.tags.slice(0, 3).map(t => (
-                        <div key={t} className='flex items-center justify-center bg-blue-50 border rounded-full border-blue-300 p-1 w-20'>
+                        <div key={t} className='flex items-center justify-center bg-blue-50 border rounded-full border-blue-300 p-1 w-22'>
                           <p className='text-blue-600 text-[12px]'>{t}</p>
                         </div>
                       ))
